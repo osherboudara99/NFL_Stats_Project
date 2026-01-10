@@ -10,3 +10,4 @@ def get_schedules_data():
     schedules_df = nfl.import_schedules(range(1999, dt.datetime.now().year + 1))
     schedules = schedules_df.to_dict(orient="records")
     return schedules
+

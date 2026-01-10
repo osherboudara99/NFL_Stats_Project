@@ -1,0 +1,59 @@
+my-app/
+│
+├── backend/
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── main.py              # App entry (FastAPI/Flask)
+│   │   ├── config.py            # Env vars, settings
+│   │   │
+│   │   ├── api/                 # Route definitions
+│   │   │   ├── __init__.py
+│   │   │   ├── health.py
+│   │   │   └── users.py
+│   │   │
+│   │   ├── services/            # Business logic
+│   │   │   ├── __init__.py
+│   │   │   └── user_service.py
+│   │   │
+│   │   ├── models/              # DB / domain models
+│   │   │   ├── __init__.py
+│   │   │   └── user.py
+│   │   │
+│   │   ├── schemas/             # Pydantic / serialization
+│   │   │   ├── __init__.py
+│   │   │   └── user_schema.py
+│   │   │
+│   │   ├── db/
+│   │   │   ├── __init__.py
+│   │   │   ├── session.py
+│   │   │   └── base.py
+│   │   │
+│   │   └── utils/
+│   │       └── logger.py
+│   │
+│   ├── tests/
+│   │   └── test_users.py
+│   │
+│   ├── requirements.txt
+│   └── Dockerfile
+│
+├── frontend/
+│   ├── public/
+│   │   └── index.html
+│   │
+│   ├── src/
+│   │   ├── js/
+│   │   │   ├── api.js           # Fetch calls
+│   │   │   └── main.js
+│   │   │
+│   │   ├── css/
+│   │   │   └── styles.css
+│   │   │
+│   │   └── assets/
+│   │       └── logo.png
+│   │
+│   └── package.json             # Optional (if using tooling)
+│
+├── .env
+├── .gitignore
+└── README.md
